@@ -1683,6 +1683,10 @@ blockquote {
     width: 100%;
     margin: 10px 0;
 }
+
+#contact form .form-item:focus {
+    border-color: #d2b356;
+}
 /* end */
 
 /*
