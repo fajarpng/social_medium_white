@@ -1678,10 +1678,17 @@ blockquote {
     height: auto;
     object-fit: contain;
 }
+#contact form {
+    padding: 5px;
+}
 
 #contact form .form-item {
     width: 100%;
     margin: 10px 0;
+}
+
+#contact form textarea, #contact form input {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
 }
 
 #contact form .form-item:focus {
@@ -2123,6 +2130,10 @@ blockquote {
     #wrapper {
         margin:0;
         padding:0;
+    }
+
+    .text-center-sm {
+        text-align: center;
     }
 
     .page-border, #scrollUp, #scrollUp:before {
