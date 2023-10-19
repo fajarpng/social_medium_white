@@ -34,6 +34,21 @@
 
     <meta name="keywords" content="Digital marketing partner, Social media success, Online presence, Creative content, Data-driven strategies, Social interactions, Brand empowerment, Engagement boost, Growth strategies, Online success, Social media marketing, Social media management, Creative digital campaigns, Social media engagement, Data-backed marketing, Digital brand narrative, Online marketing ally, Digital marketing excellence, Social media optimization, Online visibility enhancement">
     <meta name="description" content="SocialMedium is your trusted digital marketing partner, specializing in turning social interactions into real success with creative content and data-driven strategies. We empower your brand, boost engagement, and help you achieve meaningful growth. Join us on your journey to digital success today.">
+    <script>
+        function validateForm() {
+            var name = document.forms["contactForm"]["name"].value;
+            var email = document.forms["contactForm"]["email"].value;
+            var message = document.forms["contactForm"]["message"].value;
+
+            console.log(name);
+
+            if (name === "" || email === "" || message === "") {
+                alert("Please fill in all fields");
+                return false;
+            }
+        }
+    </script>
+
 </head>
 <body>
 
@@ -144,7 +159,7 @@
                 </div>
 
                 <!--Call to Action-->
-                <a href="https://api.whatsapp.com/send?phone=6285156659526" target="_blank" class="button"><i class="fa fa-whatsapp" style="font-weight: 900;"></i>  CONTACT US</a>
+                <a href="#contact" class="button">CONTACT US</a>
                 <!--End Call to Action-->
 
             </div>
@@ -293,7 +308,7 @@
                             <li>Brand Value and Conversion</li>
                             <li>1 Month (Contract)</li>
                         </ul>
-                        <a href="https://api.whatsapp.com/send?phone=6285156659526" target="_blank" class="button"><i class="fa fa-whatsapp" style="font-weight: 900;"></i>  CONTACT US</a>
+                        <a href="#contact" class="button">CONTACT US</a>
                     </div>
                 </div>
 
@@ -310,7 +325,7 @@
                             <li>Network and Security Services</li>
                             <li>And Many More</li>
                         </ul>
-                        <a href="https://api.whatsapp.com/send?phone=6285156659526" target="_blank" class="button"><i class="fa fa-whatsapp" style="font-weight: 900;"></i>  CONTACT US</a>
+                        <a href="#contact" class="button">CONTACT US</a>
                     </div>
                 </div>
                 <!--End Pricing Block-->
@@ -321,6 +336,44 @@
     </main>
     <!--End Main Content Area-->
 
+    <section id="contact" class="scrollto clearfix ">
+
+        <div class="row clearfix">
+            <div class="col-2">
+                <div class="section-heading">
+                    <h3>GET IN TOUCH</h3>
+                    <h2 class="section-title">Contact Us</h2>
+                    <p class="section-subtitle">Kami menghargai pertanyaan, masukan, dan segala pertanyaan yang Anda miliki. Apakah Anda calon klien yang ingin menjelajahi layanan kami, pelanggan dengan pertanyaan, atau mitra yang tertarik untuk berkolaborasi, kami di sini untuk membantu Anda. Jangan ragu untuk menghubungi kami. Pesan Anda penting bagi kami, dan kami akan berusaha untuk segera meresponnya.</p>
+                </div>
+
+                <a href="https://api.whatsapp.com/send?phone=6285156659526" target="_blank" class="button"><i class="fa fa-whatsapp" style="font-weight: 900;"></i>  WHATSAPP</a>
+            </div>
+
+            <div class="col-2 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="section-heading">
+                    <h3>Ask Me Anything</h3>
+                </div>
+
+                <form action="https://formspree.io/f/myyqlrkw" method="POST" >
+                    <label>
+                        Your Name:
+                        <input type="text" name="name" placeholder="Your Name" required class="form-item">
+                    </label>
+                    <label>
+                        Your email:
+                        <input type="email" name="email" placeholder="Email Address" required class="form-item">
+                    </label>
+                    <label>
+                        Your message:
+                        <textarea class="form-item" name="message" id="message" cols="30" rows="7" placeholder="Write your message" required></textarea>
+                    </label>
+                    <!-- your other form fields go here -->
+                    <button type="submit" class="button">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+    </section>
 
     <!--Footer-->
     <footer id="landing-footer" class="clearfix">
