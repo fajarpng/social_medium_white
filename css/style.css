@@ -1678,6 +1678,10 @@ blockquote {
     height: auto;
     object-fit: contain;
 }
+#contact {
+    min-height: 90vh;
+}
+
 #contact form {
     padding: 5px;
 }
